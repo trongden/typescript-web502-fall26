@@ -1,7 +1,7 @@
 enum Rate {
     low = 'Thấp', medium = 'Trung bình', high = 'Cao'
 }
-let Product: {
+let product: {
     name: string;
     price: number;
     sale: boolean;
@@ -13,4 +13,4 @@ let Product: {
     rate: Rate.low
 }
 
-console.log(Product);
+console.log(product);
