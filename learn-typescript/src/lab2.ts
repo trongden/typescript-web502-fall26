@@ -59,4 +59,8 @@ function description(list: typeof listProduct){
 
 console.log(description(listProduct));
 
+function tongtien(list: typeof listProduct){
+    return list.reduce((sum,item)=> item.price + sum, 0)
+}
 
+console.log(tongtien(listProduct));
