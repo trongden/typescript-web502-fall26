@@ -62,5 +62,21 @@ console.log(description(listProduct));
 function tongtien(list: typeof listProduct){
     return list.reduce((sum,item)=> item.price + sum, 0)
 }
-
 console.log(tongtien(listProduct));
+
+function showlist(list: typeof listProduct){
+    listProduct.forEach((item)=>{
+        console.log(`Tên sản phẩm: ${item.name}`);
+        console.log(`Giá sản phẩm: ${item.price}`);
+        console.log(`Trạng thái sale: ${item.sale}`);
+        console.log(`Đánh giá: ${item.rate}`);
+        console.log('---------------------------------------');
+    })
+}
+
+function filterlist(list: typeof listProduct){
+    return list.filter((item)=>item.sale===true && (item.rate ===Rate.medium || item.rate===Rate.high))
+}
+console.log(showlist(listProduct));
+console.log(filterlist(listProduct));
+
