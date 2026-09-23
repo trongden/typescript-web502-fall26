@@ -21,12 +21,12 @@ interface User {
 }
 
 
-type product = {
+type Product = {
     id: number;
     name: string;
     price: number;
 }
-const productItem: product ={
+const productItem: Product ={
     id:1,
     name:"Trong",
     price:222
